@@ -1,4 +1,4 @@
-# React.js landing page template v2
+# React.js
 
 ## <a href="https://react-landing-page-template-2021.vercel.app/"> LIVE DEMO</a>
 
