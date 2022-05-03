@@ -5,9 +5,10 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Link } from 'react-scroll';
 
 import config from '../config/index.json';
+import Refs from './Refs';
 
 const Menu = () => {
-  const { navigation, company, callToAction } = config;
+  const { navigation1, company } = config;
   const { name: companyName, logo } = company;
 
   return (
@@ -30,7 +31,7 @@ const Menu = () => {
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <a href="/">
                   <span className="sr-only">{companyName}</span>
                   <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
                 </a>
@@ -45,7 +46,7 @@ const Menu = () => {
               </div>
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-              {navigation.map((item) => (
+              {navigation1.map((item) => (
                 <Link
                   spy={true}
                   active="active"
@@ -53,17 +54,12 @@ const Menu = () => {
                   duration={1000}
                   key={item.name}
                   to={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
+                  className="font-medium text-gray-500 hover:text-gray-900 hover:cursor-pointer"
                 >
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="#"
-                className={`font-medium text-primary hover:text-secondary`}
-              >
-                Call to action
-              </a>
+              <Refs />
             </div>
           </nav>
         </div>
@@ -98,7 +94,7 @@ const Menu = () => {
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
+                {navigation1.map((item) => (
                   <Link
                     spy={true}
                     active="active"
@@ -111,13 +107,8 @@ const Menu = () => {
                     {item.name}
                   </Link>
                 ))}
+                <Refs />
               </div>
-              <a
-                href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
-              >
-                {callToAction.text}
-              </a>
             </div>
           </Popover.Panel>
         </Transition>
