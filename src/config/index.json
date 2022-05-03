@@ -1,122 +1,110 @@
 {
   "company": {
     "name": "React landing page 2021",
-    "logo": "/assets/images/logo.png"
+    "logo": "/assets/images/black_копия.gif"
   },
-  "navigation": [
+  "navigation1": [
     {
-      "name": "Product",
+      "name": "О нас",
       "href": "product"
     },
     {
-      "name": "Features",
-      "href": "features"
-    },
-
-    {
-      "name": "Pricing",
+      "name": "Специальности",
       "href": "pricing"
-    },
-    {
-      "name": "About",
-      "href": "about"
     }
   ],
-  "callToAction": {
-    "text": "Get started",
-    "href": "#"
-  },
+  "navigation2": [
+    {
+      "name": "Преподаватели",
+      "href": "/teachers"
+    },
+    {
+      "name": "История",
+      "href": "/history"
+    }
+  ],
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    "img": "/assets/images/happyTeam.jpeg",
+    "title": "Кафедра",
+    "subtitle": "Информационных технологий",
+    "description": "Кафедра выпускает настоящих экспертов в области ИТ, способных решать самые сложные теоретические и практические информационные задачи. Проектирование, сопровождение и эксплуатация информационных систем (ИС) в различных сферах хозяйственной деятельности; обучение и консультирование пользователей ИС, создание систем хранения и представление информации и знаний – малая часть того, что умеют наши выпускники.",
+    "img": "/assets/images/61.jpg",
     "primaryAction": {
-      "text": "Get started",
-      "href": "#"
+      "text": "Узнать больше",
+      "href": "product"
     },
     "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      "text": "Напишите нам",
+      "href": "mailto:office_ivtf@mail.ru"
     }
   },
   "product": {
-    "title": "React landing page 2021",
+    "title": "Больше про нас",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
+        "title": "Что я буду уметь?",
+        "description": "Объектами профессиональной деятельности выпускников являются прикладные и информационные процессы, информационные технологии, информационные системы. Выпускник может решать следующие задачи: реализация информационного обеспечения прикладных задач, проектирование социально-коммуникационных систем, проведения обследования прикладной области в соответствии с профилем подготовки и др.",
         "img": "/assets/images/product1.jpg"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "title": "Кем я буду работать?",
+        "description": "Выпускники обладают достаточным набором знаний, чтобы занимать любую из следующих должностей: программист, специалист по информационным системам, системный аналитик, специалист по интеграции прикладных решений, руководитель проектов в области информационных технологий.",
         "img": "/assets/images/product2.jpg"
       }
     ]
   },
   "features": {
-    "title": "Latest & greatest ",
-    "subtitle": "All the best technologies out there!",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "Что мы изучаем",
+    "subtitle": "Технологии и средства необходимые для работы аналитика",
+    "description": "Помимо знаний методологий и технологий анализа аналитику необходимо уметь применять эти знания на практике, то есть с использованием актуальных средств и методик.",
     "items": [
       {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
-        "icon": "/assets/images/react.png"
+        "name": "Нормативные документы",
+        "description": "Работа с такими нормативными документами как: ГОСТы 19, 34 групп, РД 50-34.698",
+        "icon": "/assets/images/gost.png"
       },
       {
-        "name": "Tailwind",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
-        "icon": "/assets/images/tailwindcss.svg"
+        "name": "Microsoft Excel",
+        "description": "Работа с Microsoft Excel в рамках практических занятий с целью изучения анализа данных, построения математических моделей и др.",
+        "icon": "/assets/images/Excel_logo.svg.png"
       },
       {
-        "name": "Next.js",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
-        "icon": "/assets/images/nextjs.svg"
+        "name": "IDEF0",
+        "description": "Изучение и работа с семейством нотаций процессного проектирования IDEF: IDEF0, IDEF3, IDEF1X",
+        "icon": "/assets/images/idef0.jpg"
       },
       {
-        "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
-        "icon": "/assets/images/ts.png"
+        "name": "Web-разработка",
+        "description": "Изучение и разработка современных Web-приложений с использованием таких технологий как: HTML, CSS, JS, PHP",
+        "icon": "/assets/images/html5-css3-logo.png"
       }
     ]
   },
   "pricing": {
-    "title": "Pricing",
+    "title": "Специальности",
     "items": [
       {
-        "name": "Free",
-        "price": "$0",
-        "priceDetails": "for one user",
+        "name": "Прикладная информатика в информационной сфере, очно",
+        "price": "4 года",
+        "priceDetails": "Cрок обучения",
         "features": [
-          "1 user",
-          "Basic Support",
-          "1 GB of storage",
-          "Email support"
+          "Набор на бюджет: 28 мест",
+          "Приём на платной основе: 10 мест",
+          "Стоимость обучения в 2021 году: 113 776 руб./год",
+          "Вступительные испытания и минимальные баллы: профильная математика (39), русский язык (40) и один предмет на выбор - физика (39), информатика и ИКТ (44)",
+          "Баллы последних зачисленных на бюджет (проходной балл): в 2021 году – 240 баллов"
         ]
       },
       {
-        "name": "Pro",
-        "price": "$15",
-        "priceDetails": "per user",
+        "name": "Информационно-коммуникационные технологии и аналитика данных, очно",
+        "price": "4 года",
+        "priceDetails": "Cрок обучения",
 
         "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
-        ]
-      },
-      {
-        "name": "Enterprise",
-        "price": "$29",
-        "priceDetails": "per user",
-        "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
+          "Набор на бюджет: 14 мест",
+          "Приём на платной основе: 10 мест",
+          "Стоимость обучения в 2021 году: 113 776 руб./год",
+          "Вступительные испытания и минимальные баллы: профильная математика (39), русский язык (40) и один предмет на выбор - физика (39), информатика и ИКТ (44)",
+          "Баллы последних зачисленных на бюджет (проходной балл): в 2021 году – 232 балла"
         ]
       }
     ]
@@ -124,28 +112,28 @@
   "about": {
     "sections": [
       {
-        "name": "Something",
+        "name": "О нас",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "Специальности",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "Преподаватели",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "История",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
+      "github": "mailto:office_ivtf@mail.ru",
       "twitter": "https://twitter.com/issaafkattan",
       "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
     }
