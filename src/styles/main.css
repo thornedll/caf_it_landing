@@ -17,7 +17,9 @@ a:hover {
   @apply border-b-2 border-red-700;
 }
 
-
+#just-line-break {
+  white-space: pre-line;
+}
 
 .content p {
   @apply my-6;
