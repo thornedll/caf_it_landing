@@ -1,7 +1,8 @@
 {
   "company": {
-    "name": "React landing page 2021",
-    "logo": "/assets/images/black_копия.gif"
+    "name": "Кафедра ИТ",
+    "logo": "/assets/images/black_копия.gif",
+    "href": "/"
   },
   "navigation1": [
     {
@@ -21,6 +22,10 @@
     {
       "name": "История",
       "href": "/history"
+    },
+    {
+      "name": "Войти",
+      "href": "/login"
     }
   ],
   "mainHero": {
