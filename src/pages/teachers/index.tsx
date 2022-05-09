@@ -1,4 +1,7 @@
-import React from 'react';
+/* eslint-disable prettier/prettier */
+import React, { useEffect, useState } from 'react';
+
+import TimeMe from "timeme.js";
 
 import About from '../../components/About';
 import Analytics from '../../components/Analytics';
@@ -9,8 +12,44 @@ import TeachersCards from '../../components/TeachersCards';
 // import WorkFlow from '../../components/Workflow';
 // import RoadMap from '../../components/RoadMap';
 
+function Tracker({ shouldSendEvent }) {
+  const tid = '1x';
+  const t = new Date().getTime();
+
+  const search = new URLSearchParams();
+  search.set('t', t);
+  search.set("tid", tid);
+  search.set("category", "Resume");
+  search.set("name", "visit");
+  search.set("value", TimeMe.getTimeOnCurrentPageInSeconds());
+  const q = search.toString();
+
+  if (shouldSendEvent) {
+    console.log(`event sent: ${q}`);
+  }
+
+  return true;
+}
+
 const App = () => {
   const config = "Профессорско-преподавательский состав";
+  const [shouldSendEvent, setShouldSendEvent] = useState(false);
+  useEffect(() => {
+    TimeMe.initialize({
+      currentPageName: "teachers", // current page
+      idleTimeoutInSeconds: 15 // seconds
+    });
+  }, []);
+
+  useEffect(() => {
+    TimeMe.callWhenUserLeaves(() => {
+      setShouldSendEvent(true);
+    });
+
+    TimeMe.callWhenUserReturns(() => {
+      setShouldSendEvent(false);
+    });
+  }, []);
 
   return (
     <div className={`bg-background grid overflow-hidden`}>
@@ -20,6 +59,7 @@ const App = () => {
             className={`relative z-10 pb-5 bg-background sm:pb-16 md:pb-5 lg:max-w-2xl lg:w-full lg:pb-5 xl:pb-5`}
           >
             <Header />
+            <Tracker shouldSendEvent={shouldSendEvent} />
           </div>
         </div>
       </div>
