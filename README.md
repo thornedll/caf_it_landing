@@ -5,8 +5,8 @@
 #### 1. Клонировать репозиторий [RU]
 
 ```
-git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
-cd react-landing-page-template-2021
+git clone https://github.com/thornedll/caf_it_landing.git
+cd caf_it_landing
 yarn
 ```
 
