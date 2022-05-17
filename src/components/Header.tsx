@@ -11,7 +11,7 @@ import Refs from './Refs';
 
 const Menu = () => {
   const { navigation1, company } = config;
-  const { name: companyName, logo } = company;
+  const { logo } = company;
 
   return (
     <>
